@@ -24,6 +24,9 @@ build/
 logs/
 *.log
 
+# Archives
+*.tgz
+
 # Coverage reports
 coverage/
 
