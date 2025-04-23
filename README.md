@@ -29,6 +29,7 @@ A Model Context Protocol (MCP) server that provides access to Gong's API for ret
    npm run build
    ```
 
+
 ### Docker
 
 Build the container:
@@ -36,7 +37,7 @@ Build the container:
 docker build -t gong-mcp .
 ```
 
-## Configuring Claude
+## Configuring Claude at Simon
 
 1. Open Claude Desktop settings
 2. Navigate to the MCP Servers section
@@ -44,11 +45,9 @@ docker build -t gong-mcp .
 
 ```json
 {
-  "command": "docker",
+  "command": "npx",
   "args": [
-    "run",
-    "-it",
-    "--rm",
+    "-y",
     "gong-mcp"
   ],
   "env": {
